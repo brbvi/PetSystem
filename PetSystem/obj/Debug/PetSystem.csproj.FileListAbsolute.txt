@@ -1,0 +1,11 @@
+C:\Users\vitob\source\repos\PetSystem\PetSystem\bin\Debug\PetSystem.exe.config
+C:\Users\vitob\source\repos\PetSystem\PetSystem\bin\Debug\PetSystem.exe
+C:\Users\vitob\source\repos\PetSystem\PetSystem\bin\Debug\PetSystem.pdb
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.csproj.AssemblyReference.cache
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.Form1.resources
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.Properties.Resources.resources
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.csproj.GenerateResource.cache
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.csproj.CoreCompileInputs.cache
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.exe
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.pdb
