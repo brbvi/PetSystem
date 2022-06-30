@@ -10,3 +10,7 @@ C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.exe
 C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.pdb
 C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.FrmCadCliente.resources
 C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.FrmPrincipal.resources
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.FrmRacas.resources
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.FrmAgendamento.resources
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.FrmAnimal.resources
+C:\Users\vitob\source\repos\PetSystem\PetSystem\obj\Debug\PetSystem.FrmServicos.resources
