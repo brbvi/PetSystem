@@ -1,5 +1,5 @@
 ﻿namespace PetSystem {
-    partial class Form1 {
+    partial class FrmPrincipal {
         /// <summary>
         /// Variável de designer necessária.
         /// </summary>
@@ -25,13 +25,13 @@
         private void InitializeComponent() {
             this.panelTop = new System.Windows.Forms.Panel();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.panelCentral = new System.Windows.Forms.Panel();
-            this.btnCliente = new System.Windows.Forms.Button();
-            this.btnRaca = new System.Windows.Forms.Button();
-            this.btnAnimal = new System.Windows.Forms.Button();
-            this.btnServicos = new System.Windows.Forms.Button();
-            this.btnAgendamento = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
+            this.btnAgendamento = new System.Windows.Forms.Button();
+            this.btnServicos = new System.Windows.Forms.Button();
+            this.btnAnimal = new System.Windows.Forms.Button();
+            this.btnRaca = new System.Windows.Forms.Button();
+            this.btnCliente = new System.Windows.Forms.Button();
+            this.panelCentral = new System.Windows.Forms.Panel();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.panelTop.SuspendLayout();
@@ -64,63 +64,17 @@
             this.panelLeft.Size = new System.Drawing.Size(270, 637);
             this.panelLeft.TabIndex = 1;
             // 
-            // panelCentral
+            // btnInicio
             // 
-            this.panelCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCentral.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelCentral.Location = new System.Drawing.Point(270, 66);
-            this.panelCentral.Name = "panelCentral";
-            this.panelCentral.Size = new System.Drawing.Size(949, 637);
-            this.panelCentral.TabIndex = 2;
-            // 
-            // btnCliente
-            // 
-            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCliente.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCliente.ForeColor = System.Drawing.Color.White;
-            this.btnCliente.Location = new System.Drawing.Point(12, 178);
-            this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(242, 59);
-            this.btnCliente.TabIndex = 0;
-            this.btnCliente.Text = "Clientes";
-            this.btnCliente.UseVisualStyleBackColor = true;
-            // 
-            // btnRaca
-            // 
-            this.btnRaca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRaca.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRaca.ForeColor = System.Drawing.Color.White;
-            this.btnRaca.Location = new System.Drawing.Point(12, 243);
-            this.btnRaca.Name = "btnRaca";
-            this.btnRaca.Size = new System.Drawing.Size(242, 59);
-            this.btnRaca.TabIndex = 1;
-            this.btnRaca.Text = "Raças";
-            this.btnRaca.UseVisualStyleBackColor = true;
-            // 
-            // btnAnimal
-            // 
-            this.btnAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnimal.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnimal.ForeColor = System.Drawing.Color.White;
-            this.btnAnimal.Location = new System.Drawing.Point(12, 308);
-            this.btnAnimal.Name = "btnAnimal";
-            this.btnAnimal.Size = new System.Drawing.Size(242, 59);
-            this.btnAnimal.TabIndex = 2;
-            this.btnAnimal.Text = "Animais";
-            this.btnAnimal.UseVisualStyleBackColor = true;
-            // 
-            // btnServicos
-            // 
-            this.btnServicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnServicos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnServicos.ForeColor = System.Drawing.Color.White;
-            this.btnServicos.Location = new System.Drawing.Point(12, 373);
-            this.btnServicos.Name = "btnServicos";
-            this.btnServicos.Size = new System.Drawing.Size(242, 59);
-            this.btnServicos.TabIndex = 3;
-            this.btnServicos.Text = "Serviços";
-            this.btnServicos.UseVisualStyleBackColor = true;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.White;
+            this.btnInicio.Location = new System.Drawing.Point(12, 113);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(242, 59);
+            this.btnInicio.TabIndex = 5;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.UseVisualStyleBackColor = true;
             // 
             // btnAgendamento
             // 
@@ -134,17 +88,65 @@
             this.btnAgendamento.Text = "Agendamentos";
             this.btnAgendamento.UseVisualStyleBackColor = true;
             // 
-            // btnInicio
+            // btnServicos
             // 
-            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.ForeColor = System.Drawing.Color.White;
-            this.btnInicio.Location = new System.Drawing.Point(12, 113);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(242, 59);
-            this.btnInicio.TabIndex = 5;
-            this.btnInicio.Text = "Inicio";
-            this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnServicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServicos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnServicos.ForeColor = System.Drawing.Color.White;
+            this.btnServicos.Location = new System.Drawing.Point(12, 373);
+            this.btnServicos.Name = "btnServicos";
+            this.btnServicos.Size = new System.Drawing.Size(242, 59);
+            this.btnServicos.TabIndex = 3;
+            this.btnServicos.Text = "Serviços";
+            this.btnServicos.UseVisualStyleBackColor = true;
+            // 
+            // btnAnimal
+            // 
+            this.btnAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnimal.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnimal.ForeColor = System.Drawing.Color.White;
+            this.btnAnimal.Location = new System.Drawing.Point(12, 308);
+            this.btnAnimal.Name = "btnAnimal";
+            this.btnAnimal.Size = new System.Drawing.Size(242, 59);
+            this.btnAnimal.TabIndex = 2;
+            this.btnAnimal.Text = "Animais";
+            this.btnAnimal.UseVisualStyleBackColor = true;
+            // 
+            // btnRaca
+            // 
+            this.btnRaca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRaca.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRaca.ForeColor = System.Drawing.Color.White;
+            this.btnRaca.Location = new System.Drawing.Point(12, 243);
+            this.btnRaca.Name = "btnRaca";
+            this.btnRaca.Size = new System.Drawing.Size(242, 59);
+            this.btnRaca.TabIndex = 1;
+            this.btnRaca.Text = "Raças";
+            this.btnRaca.UseVisualStyleBackColor = true;
+            // 
+            // btnCliente
+            // 
+            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCliente.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.ForeColor = System.Drawing.Color.White;
+            this.btnCliente.Location = new System.Drawing.Point(12, 178);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(242, 59);
+            this.btnCliente.TabIndex = 0;
+            this.btnCliente.Text = "Clientes";
+            this.btnCliente.UseVisualStyleBackColor = true;
+            // 
+            // panelCentral
+            // 
+            this.panelCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panelCentral.BackgroundImage = global::PetSystem.Properties.Resources.titico2;
+            this.panelCentral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCentral.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelCentral.Location = new System.Drawing.Point(270, 66);
+            this.panelCentral.Name = "panelCentral";
+            this.panelCentral.Size = new System.Drawing.Size(949, 637);
+            this.panelCentral.TabIndex = 2;
             // 
             // btnMin
             // 
@@ -157,6 +159,7 @@
             this.btnMin.Size = new System.Drawing.Size(43, 43);
             this.btnMin.TabIndex = 1;
             this.btnMin.UseVisualStyleBackColor = true;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // btnSair
             // 
@@ -169,8 +172,9 @@
             this.btnSair.Size = new System.Drawing.Size(47, 47);
             this.btnSair.TabIndex = 0;
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // Form1
+            // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,7 +185,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "Form1";
+            this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelTop.ResumeLayout(false);
