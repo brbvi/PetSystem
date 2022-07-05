@@ -19,7 +19,7 @@ namespace PetSystem {
                 this.Validate();
                 this.clienteBindingSource.EndEdit();
                 clienteTableAdapter.Update(petshopDataSet.cliente);
-                groupBox1.Enabled = false;
+                btnFoto.Enabled = false;
                 MessageBox.Show("Registro salvo!");
             } catch (Exception) {
                 MessageBox.Show("Ocorreu um erro, verifique os valores informados");
@@ -37,16 +37,16 @@ namespace PetSystem {
         // Adicionar novo cliente.
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e) {
             clienteBindingSource.AddNew();
-            groupBox1.Enabled = true;
+            btnFoto.Enabled = true;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e) {
             clienteBindingSource.CancelEdit();
-            groupBox1.Enabled = false;
+            btnFoto.Enabled = false;
         }
 
         private void btnEditar_Click(object sender, EventArgs e) {
-            groupBox1.Enabled = true;
+            btnFoto.Enabled = true;
         }
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e) {
@@ -58,6 +58,17 @@ namespace PetSystem {
             } catch (Exception) {
                 clienteTableAdapter.Fill(petshopDataSet.cliente);
                 MessageBox.Show("Registro não pode ser excluido");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            try {
+                openFileDialog1.Filter = "Fotos (*.jpg; *.png; *.jpeg;) | *.jpg; *.png; *.jpeg";
+                if (openFileDialog1.ShowDialog() == DialogResult.OK) {
+                    cli_fotoPictureBox.Image = new Bitmap(openFileDialog1.FileName);
+                }
+            } catch (Exception) {
+                MessageBox.Show("Erro ao carregar o arquivo de imagem", "PetSystem", MessageBoxButtons.OK, MessageBoxIcon.Error);                
             }
         }
     }

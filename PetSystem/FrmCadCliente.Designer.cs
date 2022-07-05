@@ -32,7 +32,7 @@
             System.Windows.Forms.Label cli_enderecoLabel;
             System.Windows.Forms.Label cli_fotoLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadCliente));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnFoto = new System.Windows.Forms.GroupBox();
             this.cli_codigoLabel1 = new System.Windows.Forms.Label();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.petshopDataSet = new PetSystem.petshopDataSet();
@@ -41,24 +41,26 @@
             this.cli_emailTextBox = new System.Windows.Forms.TextBox();
             this.cli_cpfMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.cli_enderecoTextBox = new System.Windows.Forms.TextBox();
-            this.cli_fotoPictureBox = new System.Windows.Forms.PictureBox();
             this.clienteTableAdapter = new PetSystem.petshopDataSetTableAdapters.clienteTableAdapter();
             this.tableAdapterManager = new PetSystem.petshopDataSetTableAdapters.TableAdapterManager();
             this.clienteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.clienteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cli_fotoPictureBox = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             cli_codigoLabel = new System.Windows.Forms.Label();
             cli_nomeLabel = new System.Windows.Forms.Label();
             cli_celularLabel = new System.Windows.Forms.Label();
@@ -66,12 +68,12 @@
             cli_cpfLabel = new System.Windows.Forms.Label();
             cli_enderecoLabel = new System.Windows.Forms.Label();
             cli_fotoLabel = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.btnFoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.petshopDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cli_fotoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).BeginInit();
             this.clienteBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cli_fotoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cli_codigoLabel
@@ -137,30 +139,31 @@
             cli_fotoLabel.TabIndex = 12;
             cli_fotoLabel.Text = "cli foto:";
             // 
-            // groupBox1
+            // btnFoto
             // 
-            this.groupBox1.Controls.Add(cli_codigoLabel);
-            this.groupBox1.Controls.Add(this.cli_codigoLabel1);
-            this.groupBox1.Controls.Add(cli_nomeLabel);
-            this.groupBox1.Controls.Add(this.cli_nomeTextBox);
-            this.groupBox1.Controls.Add(cli_celularLabel);
-            this.groupBox1.Controls.Add(this.cli_celularMaskedTextBox);
-            this.groupBox1.Controls.Add(cli_emailLabel);
-            this.groupBox1.Controls.Add(this.cli_emailTextBox);
-            this.groupBox1.Controls.Add(cli_cpfLabel);
-            this.groupBox1.Controls.Add(this.cli_cpfMaskedTextBox);
-            this.groupBox1.Controls.Add(cli_enderecoLabel);
-            this.groupBox1.Controls.Add(this.cli_enderecoTextBox);
-            this.groupBox1.Controls.Add(cli_fotoLabel);
-            this.groupBox1.Controls.Add(this.cli_fotoPictureBox);
-            this.groupBox1.Enabled = false;
-            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(33, 57);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(866, 510);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Dados do Cliente";
+            this.btnFoto.Controls.Add(this.button1);
+            this.btnFoto.Controls.Add(cli_codigoLabel);
+            this.btnFoto.Controls.Add(this.cli_codigoLabel1);
+            this.btnFoto.Controls.Add(cli_nomeLabel);
+            this.btnFoto.Controls.Add(this.cli_nomeTextBox);
+            this.btnFoto.Controls.Add(cli_celularLabel);
+            this.btnFoto.Controls.Add(this.cli_celularMaskedTextBox);
+            this.btnFoto.Controls.Add(cli_emailLabel);
+            this.btnFoto.Controls.Add(this.cli_emailTextBox);
+            this.btnFoto.Controls.Add(cli_cpfLabel);
+            this.btnFoto.Controls.Add(this.cli_cpfMaskedTextBox);
+            this.btnFoto.Controls.Add(cli_enderecoLabel);
+            this.btnFoto.Controls.Add(this.cli_enderecoTextBox);
+            this.btnFoto.Controls.Add(cli_fotoLabel);
+            this.btnFoto.Controls.Add(this.cli_fotoPictureBox);
+            this.btnFoto.Enabled = false;
+            this.btnFoto.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFoto.Location = new System.Drawing.Point(33, 57);
+            this.btnFoto.Name = "btnFoto";
+            this.btnFoto.Size = new System.Drawing.Size(866, 510);
+            this.btnFoto.TabIndex = 0;
+            this.btnFoto.TabStop = false;
+            this.btnFoto.Text = "Dados do Cliente";
             // 
             // cli_codigoLabel1
             // 
@@ -223,15 +226,6 @@
             this.cli_enderecoTextBox.Size = new System.Drawing.Size(481, 33);
             this.cli_enderecoTextBox.TabIndex = 11;
             // 
-            // cli_fotoPictureBox
-            // 
-            this.cli_fotoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.clienteBindingSource, "cli_foto", true));
-            this.cli_fotoPictureBox.Location = new System.Drawing.Point(292, 305);
-            this.cli_fotoPictureBox.Name = "cli_fotoPictureBox";
-            this.cli_fotoPictureBox.Size = new System.Drawing.Size(135, 155);
-            this.cli_fotoPictureBox.TabIndex = 13;
-            this.cli_fotoPictureBox.TabStop = false;
-            // 
             // clienteTableAdapter
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
@@ -287,24 +281,6 @@
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
             // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(36, 36);
-            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(36, 36);
-            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
-            // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -325,6 +301,29 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 39);
             // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 39);
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(36, 36);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(36, 36);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -342,11 +341,6 @@
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(36, 36);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 39);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -395,6 +389,34 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::PetSystem.Properties.Resources.camera;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(433, 306);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 47);
+            this.button1.TabIndex = 14;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cli_fotoPictureBox
+            // 
+            this.cli_fotoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.clienteBindingSource, "cli_foto", true));
+            this.cli_fotoPictureBox.Location = new System.Drawing.Point(292, 305);
+            this.cli_fotoPictureBox.Name = "cli_fotoPictureBox";
+            this.cli_fotoPictureBox.Size = new System.Drawing.Size(135, 155);
+            this.cli_fotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cli_fotoPictureBox.TabIndex = 13;
+            this.cli_fotoPictureBox.TabStop = false;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Title = "Escolha a foto do cliente";
+            // 
             // FrmCadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,19 +424,19 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(937, 598);
             this.Controls.Add(this.clienteBindingNavigator);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnFoto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCadCliente";
             this.Text = "FrmCadCliente";
             this.Load += new System.EventHandler(this.FrmCadCliente_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.btnFoto.ResumeLayout(false);
+            this.btnFoto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.petshopDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cli_fotoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).EndInit();
             this.clienteBindingNavigator.ResumeLayout(false);
             this.clienteBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cli_fotoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,7 +444,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox btnFoto;
         private petshopDataSet petshopDataSet;
         private System.Windows.Forms.BindingSource clienteBindingSource;
         private petshopDataSetTableAdapters.clienteTableAdapter clienteTableAdapter;
@@ -449,5 +471,7 @@
         private System.Windows.Forms.PictureBox cli_fotoPictureBox;
         private System.Windows.Forms.ToolStripButton btnCancelar;
         private System.Windows.Forms.ToolStripButton btnEditar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

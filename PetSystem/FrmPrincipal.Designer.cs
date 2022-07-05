@@ -27,6 +27,7 @@
             this.btnMin = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.panelSelecao = new System.Windows.Forms.Panel();
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnAgendamento = new System.Windows.Forms.Button();
             this.btnServicos = new System.Windows.Forms.Button();
@@ -34,7 +35,6 @@
             this.btnRaca = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
             this.panelCentral = new System.Windows.Forms.Panel();
-            this.panelSelecao = new System.Windows.Forms.Panel();
             this.panelTop.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.SuspendLayout();
@@ -91,6 +91,14 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(270, 637);
             this.panelLeft.TabIndex = 1;
+            // 
+            // panelSelecao
+            // 
+            this.panelSelecao.BackColor = System.Drawing.Color.White;
+            this.panelSelecao.Location = new System.Drawing.Point(26, 39);
+            this.panelSelecao.Name = "panelSelecao";
+            this.panelSelecao.Size = new System.Drawing.Size(14, 85);
+            this.panelSelecao.TabIndex = 6;
             // 
             // btnInicio
             // 
@@ -176,19 +184,11 @@
             this.panelCentral.BackgroundImage = global::PetSystem.Properties.Resources.titico2;
             this.panelCentral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCentral.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelCentral.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelCentral.Location = new System.Drawing.Point(270, 66);
             this.panelCentral.Name = "panelCentral";
             this.panelCentral.Size = new System.Drawing.Size(949, 637);
             this.panelCentral.TabIndex = 2;
-            // 
-            // panelSelecao
-            // 
-            this.panelSelecao.BackColor = System.Drawing.Color.White;
-            this.panelSelecao.Location = new System.Drawing.Point(26, 39);
-            this.panelSelecao.Name = "panelSelecao";
-            this.panelSelecao.Size = new System.Drawing.Size(14, 85);
-            this.panelSelecao.TabIndex = 6;
             // 
             // FrmPrincipal
             // 
